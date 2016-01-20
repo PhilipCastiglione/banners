@@ -15,11 +15,11 @@
     opacity: 0;
     z-index: 0;
     -webkit-backface-visibility: hidden;
-    -webkit-animation: imageAnimation 12s linear infinite 0s;
-    -moz-animation: imageAnimation 12s linear infinite 0s;
-    -o-animation: imageAnimation 12s linear infinite 0s;
-    -ms-animation: imageAnimation 12s linear infinite 0s;
-    animation: imageAnimation 12s linear infinite 0s; 
+    -webkit-animation: imageAnimation 12s linear 0s;
+    -moz-animation: imageAnimation 12s linear 0s;
+    -o-animation: imageAnimation 12s linear 0s;
+    -ms-animation: imageAnimation 12s linear 0s;
+    animation: imageAnimation 12s linear 0s; 
 }
 
 #crossfade > div:nth-child(1)  {
@@ -43,13 +43,6 @@
     -ms-animation-delay: 6s;
     animation-delay: 6s; 
 }
-#crossfade > div:nth-child(4) {
-    -webkit-animation-delay: 9s;
-    -moz-animation-delay: 9s;
-    -o-animation-delay: 9s;
-    -ms-animation-delay: 9s;
-    animation-delay: 9s; 
-}
 
 .button1 {
     position: absolute;
@@ -60,19 +53,23 @@
 
 .button2 {
     width: 200px;
-    height: 34px;
+    height: 35px;
     position: absolute;
     z-index: 1;
     display: block;
     margin: 0 auto;
-    padding: 10px 0;
-    font-size: 22px;
-    font-weight: 600;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
-    border-radius: 5px;
     color: white;
     background: orange;
     text-decoration: none;
+}
+
+.last_slide {
+    
 }
 
 /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
