@@ -1,0 +1,156 @@
+.background_image {
+    position: fixed;
+}
+    
+#crossfade {
+    width: 970px;
+    height: 250px;
+    position: relative;
+    display: inline-block;
+}
+
+#crossfade > div { 
+    position: absolute;
+    color: transparent;
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 12s linear infinite 0s;
+    -moz-animation: imageAnimation 12s linear infinite 0s;
+    -o-animation: imageAnimation 12s linear infinite 0s;
+    -ms-animation: imageAnimation 12s linear infinite 0s;
+    animation: imageAnimation 12s linear infinite 0s; 
+}
+
+#crossfade > div:nth-child(1)  {
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s; 
+}
+#crossfade > div:nth-child(2) {
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s; 
+}
+#crossfade > div:nth-child(3) {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+#crossfade > div:nth-child(4) {
+    -webkit-animation-delay: 9s;
+    -moz-animation-delay: 9s;
+    -o-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s; 
+}
+
+.button1 {
+    position: absolute;
+    z-index: 1;
+    margin-left: 40px;
+    margin-top: 180px;
+}
+
+.button2 {
+    width: 200px;
+    height: 34px;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background: orange;
+    text-decoration: none;
+}
+
+/*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+
+.shadow {
+  -webkit-box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.3);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 1px 2px 3px rgba(0, 0, 0, 0.3);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 1px 2px 3px rgba(0, 0, 0, 0.3);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+ 
+#crossfade:hover .button1 .button2 {
+    width: 200px;
+    height: 34px;
+    border: white 1px solid;
+} 
+
+
+@-moz-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-o-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-ms-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -ms-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/*Caption sliding in from left*/
+
+/*
+
+.slide {
+    position: absolute;
+    left: -700px;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: slide 2s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 1s forwards;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+*/
